@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: argocd-demo-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: argocd
+  template:
+    metadata:
+      labels:
+        app: argocd
+    spec:
+      containers:
+      - name: argocd
+        image: 12345678910.dkr.ecr.ap-south-1.amazonaws.com/argocd-ecr-repo:V.1.0.0
+        ports:
+        - containerPort: 8082

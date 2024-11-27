@@ -1,0 +1,13 @@
+{
+    "SolutionRepoName": "argocd-demo",
+    "SolutionName": "argocd-demo-solution",
+    "Release": "master",
+    "Account": "123456789012",
+    "tag": "V.1.0.0",
+    "app_name": "sample-docker-app-2",
+    "PipelineName": "argocd-demo-pipeline",
+    "ecrRepoName": "argocd-ecr-repo", 
+    "Region": "ap-south-1",
+    "clusterName": "eksargocd",
+    "clusterRoleName": "eksmasterrole"
+}
